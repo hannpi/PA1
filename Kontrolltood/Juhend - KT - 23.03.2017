@@ -1,0 +1,44 @@
+Arvutikontrolltöö 23.03.2017
+
+Eva käib poes, ostab erinevaid asju ja paneb ostude kaalud kirja faili. Failis on ostude kaalud grammides (täisarvud), igaüks eraldi 
+real (tehke see fail ise mingi tekstiredaktoriga). Eval on olemas erinevad kotid. On teada, et kilekotiga saab kanda kuni 3 kilogrammi
+(kaasaarvatud), paberkotiga kuni 1,5 kilogrammi (kaasaarvatud) ja kangaskotiga kuni 5 kilogrammi (kaasaarvatud).
+
+Eva tahab välja arvutada, mitu kilogrammi ta on ostnud. Samuti tahab Eva teada, kas kaasa võetud kott peab ostude kaalule vastu. 
+
+Koostada funktsioon ostude_kaal_kilogrammides, mis võtab argumendiks ostude kaalude järjendi (kui ostude kaalud on grammides) ning 
+leiab ja tagastab (return) kaalude kogusumma kilogrammides. Näiteks, kui järjendis on arvud 800, 1200, 150 ja 100, siis tagastatakse 
+2.25. Ümardada pole vaja.
+
+Koostada programm, mis 
+ - küsib kasutajalt failinime;
+ - loeb failist ostude kaalud ja koostab nendest järjendi;
+ - leiab ja väljastab ekraanile, mitu kilogrammi Eva on kokku ostnud. Selleks tuleb kasutada koostatud funktsiooni ostude_kaal_kilogrammides;
+ - küsib kasutajalt, milline kott on kaasas (kasutaja sisestab Kilekott, Paberkott või Kangaskott) ja kontrollib, kas see kott peab 
+ ostude kaalule vastu. Kilekotiga saab kanda kuni 3 kilogrammi, paberkotiga kuni 1,5 kilogrammi ja kangaskotiga kuni 5 kilogrammi. Kui 
+ kott peab vastu, siis väljastatakse ekraanile teade "Kott sobib", vastasel korral väljastatakse ekraanile teade "Kott ei sobi".
+ 
+Olulisemad kohad programmis peavad olema kommenteeritud.
+
+Näiteks faili kaalud.txt sisu:
+500
+150
+700
+300
+250
+
+korral peab programm andma tulemuse (kasutaja sisend on pärast koolonit):
+
+Sisestage failinimi: kaalud.txt
+Kaalude kogusumma kilogrammides: 1.9
+Milline kott Eval on?: Kilekott
+Eva koti kandevõime (kg) = 3
+Kott sobib
+
+või siis näiteks:
+
+Sisestage failinimi: kaalud.txt
+Kaalude kogusumma kilogrammides: 1.9
+Milline kott Eval on?: Paberkott
+Eva koti kandevõime (kg) = 1.5
+Kott ei sobi
