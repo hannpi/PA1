@@ -1,0 +1,4 @@
+6.1 Lugemine veebist 
+6.2 Lugemine failist
+6.3 Faili kirjutamine
+6.4 Lihtne kasutajaliides
