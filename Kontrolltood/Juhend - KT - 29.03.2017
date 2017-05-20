@@ -1,0 +1,28 @@
+Arvutikontrolltöö 29.03.2017
+
+Malle on autojuht, kes sõidab iga päev autoga pikki vahemaid. Selleks, et oma sõitude üle arvet pidada, märgib ta faili üles kõik
+vahemaad, mis ta on ilma peatuseta järjest sõitnud. Failis on vahemaad (täisarvud), igaüks eraldi real (tehke see fail ise mingi 
+tekstiredaktoriga). On lepitud kokku, et pärast 100 km järjest sõitmist peab autojuht kindlasti peatuma ja puhkama.
+
+Malle tahab välja arvutada, mitu kilomeetrit ta on läbinud kokku ja mitu kilomeetrit on läbitud legaalselt (nende vahemaade summa, mis 
+ei ole pikemad kui 100 kilomeetrit). Samuti tahab Malle välja arvutada, vähemalt mitu peatust etteantud teekonnal teha tuleb.
+
+Koostada funktsioon legaalsed, mis võtab argumediks vahemaade järjendi ning leiab ja tagastab (return) selliste vahemaade summa, mis 
+on lühemad kui 100 km või täpselt 100 km. Näiteks, kui järjendis on arvud 80, 120, 105, 100, siis tagastatakse 180.
+
+Koostada programm, mis
+ - küsib kasutajalt failinime;
+ - loeb failist vahemaad ja koostab nendest järjendi;
+ - leiab ja väljastab ekraanile, mitu kilomeetrit Malle kokku on läbinud;
+ - leiab ja väljastab ekraanile, mitu kilomeetrit nendest on läbitud legaalselt (ühe jupiga on sõidetud vähem kui 100 km või täpselt
+ 100 km). Selleks tuleb kasutada koostatud funktsiooni legaalsed;
+ - küsib kasutajalt, mitu kilomeetrit on plaanis sõita, ja väljastab ekraanile vähemalt mitu peatust peab selle sõidu jooksul tegema. 
+ Seejuures võib arvestada, et peatuse saab teha ükskõik kus, ei pea ootama parklat vms. Vihje: abiks võiks olla // (täisosa leidmine).
+ 
+Olgu meil failiks vahemaad.txt, mis sisaldab järgnevaid läbitud distantse:
+100
+120
+125
+80
+90
+145
