@@ -5,7 +5,7 @@ Valemiga (inimese pikkus) = (raamisuurus) * 2,54 / 0,66 + 100 saab ligikaudu arv
 raamisuurus sobib. Näiteks raamisuuruse 20,0 tolli puhul on sobiv pikkus 177 cm.
 
 Müüja tahab pakkuda konkreetsele ostjale sobivaid jalgrattaid. Sobivaks loetakse jalgratas siis, kui ostja pikkus erineb valemiga 
-arvutatud sobivast pikkusest vähem kui 5cm. Näiteks raamisuurusega 20,0 tolli jalgratas sobib, kui ostja pikkus on suurem kui 
+arvutatud sobivast pikkusest vähem kui 5 cm. Näiteks raamisuurusega 20,0 tolli jalgratas sobib, kui ostja pikkus on suurem kui 
 177-5 cm ja väiksem kui 177+5 cm.
 
 Lisaks tahab müüja teada, milline raamisuurus on müügilolevatel jalgratastel kõige suurem ja milline on kõige väiksem. 
