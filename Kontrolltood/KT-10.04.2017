@@ -1,0 +1,51 @@
+Arvestustöö 10.04.2017
+
+Poes on müügil erinevate raamisuurustega jalgrattaid. Jalgratta raami suurust mõõdetakse tollides. 
+Valemiga (inimese pikkus) = (raamisuurus) * 2,54 / 0,66 + 100 saab ligikaudu arvutada, mitme sentimeetri pikkusele inimesele vastav 
+raamisuurus sobib. Näiteks raamisuuruse 20,0 tolli puhul on sobiv pikkus 177 cm.
+
+Müüja tahab pakkuda konkreetsele ostjale sobivaid jalgrattaid. Sobivaks loetakse jalgratas siis, kui ostja pikkus erineb valemiga 
+arvutatud sobivast pikkusest vähem kui 5cm. Näiteks raamisuurusega 20,0 tolli jalgratas sobib, kui ostja pikkus on suurem kui 
+177-5 cm ja väiksem kui 177+5 cm.
+
+Lisaks tahab müüja teada, milline raamisuurus on müügilolevatel jalgratastel kõige suurem ja milline on kõige väiksem. 
+
+Müügilolevate jalgrataste raamisuurused (ujukomaarvudena) on kirjas failis eraldi ridadel. Palun tehke see fail ise mingi 
+tekstiredaktori või Thonnyga.
+
+Koostada funktsioon sobiv_pikkus, mis võtab argumendiks raamisuuruse (tollides) ning leiab ja tagastab (return) inimese sobiva 
+pikkuse (ümardatuna täissentimeetriteks). Valem on toodud ülal.
+
+Koostada programm, mis:
+ - küsib kasutajalt raamisuuruste faili nime;
+ - küsib kasutajalt ostja pikkuse;
+ - loeb failist järjest raamisuurused;
+ - leiab iga raamisuuruse korral kasutades funktsiooni sobiv_pikkus abi, kas see raamisuurus sobib sellele ostjale. Kui sobib, siis 
+ väljastatakse raamisuurus ekraanile;
+ - väljastab ekraanile kõige väiksema ja kõige suurema raamisuuruse, mis failis oli.
+
+Funktsiooni sobiv_pikkus kasutamise näide:
+>>> sobiv_pikkus(20.0)
+177
+
+Näiteks faili rattad.txt sisu:
+
+14.5
+23.0
+16.0
+15.5
+20.0
+15.5
+15.0
+
+korral peab programm andma tulemuse (kasutaja sisend on siin näidatud pärast koolonit):
+
+Sisestage failinimi: rattad.txt
+Sisestage pikkus: 162
+Sobivad jalgrataste raamid:
+16.0
+15.5
+15.5
+15.0
+Kõige väiksem raam on suurusega 14.5
+Kõige suurem raam on suurusega 23.0
