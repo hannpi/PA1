@@ -1,29 +1,38 @@
 Kontrolltöö näidisülesanne - originaalselt kättesaadav siit: https://courses.cs.ut.ee/2017/prog-alused/spring/Main/KtNaidis (20.05.2017)
 
-Väga paljudes riikides on kehtestatud käibemaks. Eestis on see paljude kaupade puhul 20%, mis tähendab, et kui näiteks ilma käibemaksuta hind on 500 eurot, siis käibemaksuga on 500 * (1 + 20/100) = 600 eurot. Teatud tingimustel saab riigist lahkudes käibemaksu tagasi.
+Väga paljudes riikides on kehtestatud käibemaks. Eestis on see paljude kaupade puhul 20%, mis tähendab, et kui näiteks ilma 
+käibemaksuta hind on 500 eurot, siis käibemaksuga on 500 * (1 + 20/100) = 600 eurot. Teatud tingimustel saab riigist lahkudes 
+käibemaksu tagasi.
 
-Mõnedes (eriti turistidele mõeldud) poodides on siltidel kaupade hinnad ilma käibemaksuta. Ada käis sellises poes ja ostis erinevaid asju. Ta pani kirja, millised olid nende asjade hinnad poes (ehk ilma käibemaksuta). Failis on nüüd kõik hinnad eraldi ridadel. Kui inimene lahkub riigist, siis ta saab soovi korral käibemaksu tagasi, kui konkreetse kauba müügihind koos käibemaksuga ületab mingi taseme (nt. Euroopa Liidus 38 eurot, Tais aga 2000 bahti).
+Mõnedes (eriti turistidele mõeldud) poodides on siltidel kaupade hinnad ilma käibemaksuta. Ada käis sellises poes ja ostis erinevaid 
+asju. Ta pani kirja, millised olid nende asjade hinnad poes (ehk ilma käibemaksuta). Failis on nüüd kõik hinnad eraldi ridadel. Kui 
+inimene lahkub riigist, siis ta saab soovi korral käibemaksu tagasi, kui konkreetse kauba müügihind koos käibemaksuga ületab mingi 
+taseme (nt. Euroopa Liidus 38 eurot, Tais aga 2000 bahti).
 
-Koostada programm, mis arvutab, kui palju inimene maksis poes koos käibemaksuga. Samuti arvutab programm, kui palju ta saab raha tagasi (kui lahkub riigist).
+Koostada programm, mis arvutab, kui palju inimene maksis poes koos käibemaksuga. Samuti arvutab programm, kui palju ta saab raha 
+tagasi (kui lahkub riigist).
 
-Koostada funktsioon hind_käibemaksuga, mis võtab argumentideks käibemaksuta hinna ja käibemaksu protsendi ning arvutab käibemaksuga hinna ja tagastab selle. kmgaHind = kmtaHind * (1 + kmProtsent/100)
+Koostada funktsioon hind_käibemaksuga, mis võtab argumentideks käibemaksuta hinna ja käibemaksu protsendi ning arvutab käibemaksuga 
+hinna ja tagastab selle. kmgaHind = kmtaHind * (1 + kmProtsent/100)
 
 Koostada programm, mis küsib kasutajalt
 
-failinime,
-käibemaksu protsendi,
-summa, millest alates saab tagasi käibemaksu.
+ - failinime,
+ - käibemaksu protsendi,
+ - summa, millest alates saab tagasi käibemaksu.
+ 
 Programm peab
 
-lugema failist ilma käibemaksuta hinnad.
-arvutama ja väljastama ekraanile koos käibemaksuga hindade summa, mis on ümardatud kahe kohani peale koma. Käibemaksuga hindade arvutamisel kasutada funktsiooni hind_käibemaksuga.
-ümardama peab tulemuse, arvutuste ajal ümardada ei tohi.
-arvutama ja väljastama ekraanile, kui palju raha (ümardatuna kahe kohani pärast koma) inimene riigist lahkudes tagasi saab.
-ümardama peab tulemuse, arvutuste ajal ümardada ei tohi.
+ - lugema failist ilma käibemaksuta hinnad.
+ - arvutama ja väljastama ekraanile koos käibemaksuga hindade summa, mis on ümardatud kahe kohani peale koma. Käibemaksuga hindade 
+   arvutamisel kasutada funktsiooni hind_käibemaksuga.
+      - ümardama peab tulemuse, arvutuste ajal ümardada ei tohi.
+ - arvutama ja väljastama ekraanile, kui palju raha (ümardatuna kahe kohani pärast koma) inimene riigist lahkudes tagasi saab.
+      - ümardama peab tulemuse, arvutuste ajal ümardada ei tohi.
+      
 Näide programmi tööst:
 
 Näiteks fail hinnad.txt , kus on arvud
-
 5
 33
 2.6
@@ -43,13 +52,15 @@ Tagasi saab 54.71
 Seletus, kuidas vastused on saadud:
 
 Ilma käibemaksuta hinnad failis on 5, 33, 2.6, 18, 35, 105.55, 99.99
-Vastavad hinnad koos käibemaksuga (arvutatakse valemi kmgaHind = kmtaHind * (1 + kmProtsent/100) abil): 6.0, 39.6, 3.12, 21.599999999999998, 42.0, 126.66, 119.98799999999999
+Vastavad hinnad koos käibemaksuga (arvutatakse valemi kmgaHind = kmtaHind * (1 + kmProtsent/100) abil): 6.0, 39.6, 3.12, 
+21.599999999999998, 42.0, 126.66, 119.98799999999999
 Hindade summa koos käibemaksuga on 358.96799999999996
 Hindade summa koos käibemaksuga ümardatult kahe kohani peale koma on 358.97
 
 Ilma käibemaksuta hinnad failis on 5, 33, 2.6, 18, 35, 105.55, 99.99
 Vastavad hinnad koos käibemaksuga: 6.0, 39.6, 3.12, 21.599999999999998, 42.0, 126.66, 119.98799999999999
-Hinnad koos käibemaksuga, mis on suuremad kui summa, millest alates saab käibemaksu tagasi (kasutaja sisestas 38): 39.6, 42.0, 126.66, 119.98799999999999
+Hinnad koos käibemaksuga, mis on suuremad kui summa, millest alates saab käibemaksu tagasi (kasutaja sisestas 38): 39.6, 42.0, 126.66, 
+119.98799999999999
 Nende summa on 328.248
 Käibemaks summast 328.248 on 54.70799999999997 (arvutatakse valemi km = kmgaSumma - kmgaSumma/(1+kmProtsent/100) abil)
 Käibemaks summast 328.248 ümardatult kahe kohani peale koma on 54.71
@@ -57,4 +68,5 @@ Käibemaks summast 328.248 ümardatult kahe kohani peale koma on 54.71
 Veel mõned arvutuskäigud:
 
 käibemaksu leidmiseks korrutada summa (käibemaks/100)-ga. Näiteks kui summaks on 500 ja käibemaks on 20 protsenti, siis 500 x (20/100) = 100.
-käibemaksu leidmiseks summast käibemaksuga jagada (1+käibemaks/100)-ga ning käibemaks on summade vahe. Näiteks kui summaks on 600 ja käibemaks on 20 protsenti, siis 600-600/(1+käibemaks/100) = 600 - 500 = 100, käibemaks on 100.
+käibemaksu leidmiseks summast käibemaksuga jagada (1+käibemaks/100)-ga ning käibemaks on summade vahe. Näiteks kui summaks on 600 ja 
+käibemaks on 20 protsenti, siis 600-600/(1+käibemaks/100) = 600 - 500 = 100, käibemaks on 100.
