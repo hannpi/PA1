@@ -1,0 +1,4 @@
+5.1 Funktsioon
+5.2 Funktsioonil on väärtus
+5.3 Argumendid, muutujad
+5.4 Graafika ja funktsioon
