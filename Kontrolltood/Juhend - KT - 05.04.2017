@@ -1,0 +1,42 @@
+Antud juhend on poolik! Näidisfail tunnid.txt on koostatud, et failis olevate väärtuste summa oleks 230.5, et oleks kooskõlas näidetega.
+
+Töötajale makstakse palka tunnitöö alusel või lepingus fikseeritud tasu järgi. On teada, et kui palka arvestatakse tunnitöö alusel, siis 
+tunnitasu on 6 eurot. Ühtlasi, on teada, et ületundide eest määratakse lisatasu, mida makstakse 1,5 kordse koefitsendiga. Ühes 
+tööpäevas on 8 töötundi. Kui töötajale makstakse fikseeritud palka, siis tasu suurus on sätestatud lepingus.
+
+Koostada funktsioon tunnid, mis võtab argumendiks töötundide järjendi ning tagastab tehtud tundide summa. 
+
+Koostada programm, mis peab:
+ - küsima kasutajalt, kas töötajale makstakse palka tunnitöö alusel või fikseeritud tasu järgi;
+ - küsima kasutajalt, mitu tööpäeva on kuus ja arvutama välja selles kuus ette nähtud tundide arvu;
+ - lugema failist tunnid.txt töötunnid ja need funktsiooni kasutades kokku liitma;
+ - väljastama töötaja ületundide arvu ja väljastama ületundide eest teenitud lisatasu summa;
+ - fikseeritud tasu korral küsima palga suurust. Olgu teada, et fikseeritud palga puhul ületundide eest lisatasu ei maksta;
+ - väljastama töötajale makstava palga suuruse.
+ 
+Näiteks fail tunnid.txt, mille sisu on
+
+29
+22
+21
+22
+46.5
+40
+50
+
+annab tulemuse:
+
+Sisestage faili nimi: tunnid.txt
+Kas palka makstakse tunnitöö või fikseeritud tasu alusel?: Tunnitöö
+Palun sisesta mitu tööpäeva on kuus: 20
+Töötaja tegi kuus 230.5 töötundi.
+Töötaja ületundide arv on 70.5 ja ta teenis lisatasu 634.5 eurot.
+Töötaja töötasu suurus on 1594.5 eurot.
+
+või
+
+Sisestage faili nimi: tunnid.txt
+Kas palka makstakse tunnitöö või fikseeritud tasu alusel?: Fikseeritud
+Palun sisesta mitu tööpäeva on kuus: 20
+Kui suur on töötaja lepingujärgne brutopalk?: 2000
+Töötaja ületundide arv on 70.5, aga töötasu suurus on 2000 eurot.
