@@ -1,0 +1,3 @@
+4.1 Järjend
+4.2 For-tsükkel, funktsioon range
+4.3 Andmed failist
